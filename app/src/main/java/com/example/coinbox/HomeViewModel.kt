@@ -21,10 +21,14 @@ class HomeViewModel @Inject constructor(var coinRepository : CoinRepository): Vi
     var liveCoins : LiveData<NetworkHelper<Coins>> =  _liveCoins
 
     fun getAllCoins(){
-        viewModelScope.launch {
-                var result = coinRepository.getCoins()
-               _liveCoins.value =  baseClient.handleGamesResponse(result)
+            viewModelScope.launch {
+                try {
+                    var result = coinRepository.getCoins()
+                    _liveCoins.value = baseClient.handleGamesResponse(result)
+                }catch (e: Exception){
+
             }
+        }
     }
 }
 

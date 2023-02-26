@@ -24,6 +24,8 @@ class CoinAdapter : ListAdapter<CoinsItem,CoinAdapter.CoinVerHolder>(Differ){
 
     class CoinVerHolder(var view : View) : RecyclerView.ViewHolder(view){
         var coinname = view.findViewById<TextView>(R.id.coin_name)
+        var rank = view.findViewById<TextView>(R.id.rank)
+        var coin = view.findViewById<TextView>(R.id.coin_nameshort)
 
     }
 
@@ -34,5 +36,7 @@ class CoinAdapter : ListAdapter<CoinsItem,CoinAdapter.CoinVerHolder>(Differ){
     override fun onBindViewHolder(holder: CoinVerHolder, position: Int) {
         var curItem = getItem(position)
         holder.coinname.text = curItem.name
+        holder.rank.text = curItem.rank.toString()
+        holder.coin.text = curItem.symbol.toUpperCase()
     }
 }
