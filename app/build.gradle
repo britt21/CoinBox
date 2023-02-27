@@ -93,6 +93,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
 
+    implementation "com.ncorti:slidetoact:0.10.0"
 
     implementation project(':data')
     implementation project(':domain')

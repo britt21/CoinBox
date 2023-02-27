@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="deep_red">#B60000</color>
     <color name="lit_blu">#005BE3</color>
+    <color name="drk_blu">#1D1B32</color>
 </resources>

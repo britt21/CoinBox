@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/drk_blu"
     android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
@@ -20,6 +21,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:background="@color/drk_blu"
             android:layout_height="match_parent">
 
             <ImageView
@@ -39,7 +41,7 @@
                 android:layout_marginStart="24dp"
                 android:text="1"
                 android:textStyle="bold"
-                android:textColor="@color/lit_blu"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -52,7 +54,7 @@
                 android:layout_marginStart="16dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="Bitcoin"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/btn_img"
                 app:layout_constraintStart_toEndOf="@+id/btn_img"
@@ -75,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$1.50"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/coin_nameshort"
                 app:layout_constraintStart_toStartOf="@+id/coin_nameshort"
