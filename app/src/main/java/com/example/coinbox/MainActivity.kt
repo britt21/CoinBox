@@ -32,6 +32,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun getAllCoins(){
         homeViewModel.liveCoins.observe(this, Observer { coins ->
+            if (coins.data!!.isNotEmpty()){
+                println("IGOTCOINS: ${coins.data}")
+            }
             coinAdapter.submitList(coins.data)
         })
     }
